@@ -5,16 +5,4 @@ abstract class NotesState {}
 
 class NotesInitial extends NotesState {}
 
-class NotesLoading extends NotesState {}
-
-class NotesSuccess extends NotesState {
-  final List<NoteModel> notes;
-
-  NotesSuccess(this.notes);
-}
-
-class NotesFaliure extends NotesState {
-  final String errorMassage;
-
-  NotesFaliure(this.errorMassage);
-}
+class NotesSuccess extends NotesState {}
